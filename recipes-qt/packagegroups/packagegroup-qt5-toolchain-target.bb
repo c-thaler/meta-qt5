@@ -14,9 +14,6 @@ USE_RUBY = " \
     qtquick1-plugins \
     ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtquick1-qmlplugins', '', d)} \
     qttranslations-qtquick1 \
-    qtwebkit-dev \
-    qtwebkit-mkspecs \
-    ${@bb.utils.contains('DISTRO_FEATURES', 'opengl', 'qtwebkit-qmlplugins', '', d)} \
 "
 
 # Requires Wayland to work
