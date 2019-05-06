@@ -198,6 +198,7 @@ fakeroot do_generate_qt_environment_file() {
     sed -i -e 's:${SDKPATHNATIVE}:$OECORE_NATIVE_SYSROOT:g' $script
 }
 
+do_generate_qt_environment_file[umask] = "022"
 addtask generate_qt_environment_file after do_install before do_package
 
 SRCREV = "82eb6aa08e5dc8a57402b69b4e55ce7d2371e84b"
